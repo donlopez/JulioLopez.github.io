@@ -8,6 +8,16 @@
     body {
       max-width: 8in;
       margin: auto;
+      background-color: black; /* Change background to black */
+      color: white; /* Change text color to white for better visibility */
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, blockquote {
+      border: 1px solid white; /* White border for elements */
+      border-radius: 10px; /* Round corners for elements */
+      padding: 10px; /* Add some padding inside the borders */
+      margin-bottom: 10px; /* Add some space between elements */
+      box-shadow: 0 0 15px white; /* White glowing effect for the borders */
     }
 
     h1 {
@@ -19,17 +29,14 @@
       text-align: center;
     }
 
-    p, a, blockquote {
-      max-width: 8in;
-      margin: auto;
-    }
-
     .profile-pic {
       display: block;
       margin: auto;
       max-width: 2.5in; /* Maximum width for the image */
       height: auto; /* Maintain aspect ratio */
       border-radius: 50%; /* Makes the image circular */
+      border: 2px solid white; /* White border for the profile picture */
+      box-shadow: 0 0 15px white; /* White glowing effect for the profile picture */
     }
 
     .contact-info {
@@ -42,10 +49,12 @@
       margin: 0 10px;
       text-decoration: none;
       color: #0077B5; /* LinkedIn Blue */
+      border: none; /* Remove borders for links in contact info */
+      box-shadow: none; /* Remove glowing effect for links in contact info */
     }
 
     .contact-info a.github, .contact-info a.twitter {
-      color: black; /* GitHub Black for GitHub and Twitter */
+      color: white; /* Change color to white for better visibility */
     }
   </style>
 </head>
