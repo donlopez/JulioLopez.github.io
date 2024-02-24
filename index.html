@@ -8,25 +8,20 @@
     body {
       max-width: 8in;
       margin: auto;
-      background-color: black; /* Change background to black */
-      color: white; /* Change text color to white for better visibility */
+      background-color: black; /* Background color */
+      color: white; /* Text color */
+      text-align: center; /* Center align all texts */
     }
 
-    h1, h2, h3, h4, h5, h6, p, a, blockquote {
-      border: 1px solid white; /* White border for elements */
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 10px; /* Add some space between elements */
+    }
+
+    p, a, blockquote {
+      border: 1px solid black; /* Change border color to black */
       border-radius: 10px; /* Round corners for elements */
       padding: 10px; /* Add some padding inside the borders */
       margin-bottom: 10px; /* Add some space between elements */
-      box-shadow: 0 0 15px white; /* White glowing effect for the borders */
-    }
-
-    h1 {
-      font-size: 2em; /* Large font size */
-      text-align: center;
-    }
-
-    h2, h3, h4, h5, h6 {
-      text-align: center;
     }
 
     .profile-pic {
@@ -34,14 +29,6 @@
       margin: auto;
       max-width: 2.5in; /* Maximum width for the image */
       height: auto; /* Maintain aspect ratio */
-      border-radius: 50%; /* Makes the image circular */
-      border: 2px solid white; /* White border for the profile picture */
-      box-shadow: 0 0 15px white; /* White glowing effect for the profile picture */
-    }
-
-    .contact-info {
-      text-align: center;
-      margin-top: 10px;
     }
 
     .contact-info a {
@@ -49,12 +36,24 @@
       margin: 0 10px;
       text-decoration: none;
       color: #0077B5; /* LinkedIn Blue */
-      border: none; /* Remove borders for links in contact info */
-      box-shadow: none; /* Remove glowing effect for links in contact info */
     }
 
     .contact-info a.github, .contact-info a.twitter {
-      color: white; /* Change color to white for better visibility */
+      color: white; /* GitHub and Twitter links color */
+    }
+
+    p:first-of-type, p:nth-of-type(2), p:nth-of-type(3) {
+      text-align: justify; /* Justify the first three paragraphs */
+      border: none; /* Remove borders for the first three paragraphs */
+    }
+
+    a[href="https://valenciacollege.edu"], h1, .profile-pic {
+      border: none; /* Remove borders for specific elements */
+      box-shadow: none; /* Remove shadow for specific elements */
+    }
+
+    blockquote {
+      text-align: center; /* Center align blockquote */
     }
   </style>
 </head>
@@ -85,14 +84,13 @@
   </p>
 
   <p>
-    This website serves as a glimpse into my journey and experiences. Feel free to explore
-    and learn more about my projects and interests in the field of technology and data analysis.
+    This website serves as a glimpse into my journey and experiences. Feel free to explore and learn more about my projects and interests in the field of technology and data analysis.
   </p>
 
   <!-- Link to Valencia College -->
   <p>
     Check out my college: 
-    <a href="https://valenciacollege.edu" target="_blank" title="Visit Valencia College">Valencia College</a>.
+    <a href="https://valenciacolollege.edu" target="_blank" title="Visit Valencia College">Valencia College</a>.
   </p>
 
   <hr> <!-- Horizontal Rule -->
