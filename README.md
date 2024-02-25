@@ -48,5 +48,5 @@ This project is open-source and available under the MIT License. See the LICENSE
 
 ## Contact
 
-If you have any questions or suggestions, please reach out to Julio Lopez via email at juliolopez9260@gmail.com or connect on [LinkedIn](https://www.linkedin.com/in/julio-lopez-380937282/).
+If you have any questions or suggestions, please reach out to Julio Lopez on [LinkedIn](https://www.linkedin.com/in/julio-lopez-380937282/).
 
