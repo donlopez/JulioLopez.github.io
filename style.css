@@ -1,0 +1,94 @@
+body {
+    margin: auto;
+    max-width: 8in;
+    color: #EAEAEA; /* Lighter text color for better contrast */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 14px; /* Slightly larger text size for readability */
+    background-color: #282828; /* Dark background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/OIG2.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  /* resize profile picture */
+
+.profile-pic {
+  display: block;
+  margin: auto;
+  max-width: 250px; /* Maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Gold color for headings */
+    font-family: 'Georgia', serif; /* Classic font for headings */
+    margin-bottom: 20px;
+  }
+  
+  p, a, blockquote {
+    color: #ffffff; /* Khaki text color */
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backgrounds */
+  }
+  
+  a {
+    color: #ADD8E6; /* Light blue for links */
+    text-decoration: none; /* No underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+  }
+  
+  .contact-info, .links-section {
+    margin: 20px 0;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .video-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  @media screen and (max-width: 8in) {
+    body {
+      font-size: 16px;
+    }
+  }
+  

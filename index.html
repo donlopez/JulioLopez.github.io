@@ -4,59 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Website</title>
-  <style>
-    body {
-      max-width: 8in;
-      margin: auto;
-      background-color: black; /* Background color */
-      color: white; /* Text color */
-      text-align: center; /* Center align all texts */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      margin-bottom: 10px; /* Add some space between elements */
-    }
-
-    p, a, blockquote {
-      border: 1px solid black; /* Change border color to black */
-      border-radius: 10px; /* Round corners for elements */
-      padding: 10px; /* Add some padding inside the borders */
-      margin-bottom: 10px; /* Add some space between elements */
-    }
-
-    .profile-pic {
-      display: block;
-      margin: auto;
-      max-width: 2.5in; /* Maximum width for the image */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 50%; /* Makes the image circular */
-    }
-
-    .contact-info a {
-      display: inline-block;
-      margin: 0 10px;
-      text-decoration: none;
-      color: #0077B5; /* LinkedIn Blue */
-    }
-
-    .contact-info a.github, .contact-info a.twitter {
-      color: white; /* GitHub and Twitter links color */
-    }
-
-    p:first-of-type, p:nth-of-type(2), p:nth-of-type(3) {
-      text-align: justify; /* Justify the first three paragraphs */
-      border: none; /* Remove borders for the first three paragraphs */
-    }
-
-    a[href="https://valenciacollege.edu"], h1, .profile-pic {
-      border: none; /* Remove borders for specific elements */
-      box-shadow: none; /* Remove shadow for specific elements */
-    }
-
-    blockquote {
-      text-align: center; /* Center align blockquote */
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" type="text/css"> <!-- Link to the external CSS file -->
 </head>
 <body>
 
@@ -65,7 +13,7 @@
 
   <!-- Image -->
   <img class="profile-pic" src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/LopezPage.jpeg" alt="Profile Picture">
-
+  
   <!-- Contact Information -->
   <div class="contact-info">
     <a href="https://www.linkedin.com/in/julio-lopez-380937282/" target="_blank" title="LinkedIn Profile">LinkedIn</a>
@@ -73,34 +21,59 @@
     <a class="github" href="https://github.com/donlopez" target="_blank" title="GitHub Profile">GitHub</a>
     |
     <a class="twitter" href="https://twitter.com/dominicanking83" target="_blank" title="Twitter Profile">Twitter</a>
+    |
+    <a href="mailto:juliolopez9260@gmail.com" title="Send me an email">Email Me</a>
   </div>
 
+  <hr> <!-- Horizontal Rule -->
+
   <!-- About Me -->
-  <p>
-    Embarking on a journey through the vibrant landscapes of data analysis and business operations, I, Julio Lopez, blend the analytical rigor of a seasoned data analyst with the entrepreneurial spirit of a business owner. My professional canvas is painted with the rich hues of SQL, Python, and data modeling, complemented by the intricate details of Excel VBA automation, crafting a masterpiece of efficiency and innovation. As the owner-operator of Don Lopez Inc., I've navigated the complex highways of business operations, steering towards excellence in efficiency and cost reduction. My adeptness in managing both the steering wheel and spreadsheets showcases a unique blend of skills, harmonizing the art of route planning with the science of financial management and regulatory compliance.
+<div class="About me">
+    <h2>About Me</h2>
+  <p style="text-align: justify; line-height: 1.5;">
+    Greetings! I'm Julio Lopez, a passionate professional in the dynamic fields of cloud architecture and data analysis. With a blend of technical expertise and creative problem-solving, I thrive on transforming raw data into actionable insights that drive business success.
+
+My journey in the realm of technology has led me to specialize in SQL, Python, and data modeling, equipping me with the tools to navigate complex data landscapes with precision and finesse.
+
+As a cloud architect, I excel in crafting robust and scalable cloud solutions tailored to meet the diverse needs of modern businesses. My focus lies not only in optimizing infrastructure for performance and security but also in ensuring seamless integration and cost-effectiveness.
+
+In the realm of data analysis, I leverage my proficiency in SQL and Python to unearth patterns, trends, and correlations hidden within vast datasets. Through meticulous data modeling, I structure information in a way that empowers organizations to make informed decisions and drive strategic initiatives forward.
+
+With a commitment to continuous learning and a drive for excellence, I am dedicated to staying at the forefront of technological advancements. As I continue to grow and evolve in my journey, I am excited to contribute my skills and expertise to organizations seeking to harness the power of data to achieve their goals.
   </p>
+</div>
 
-  <p>
-    My academic and self-driven educational pursuits, from the halls of Valencia College aiming for a BAS in Computer Science to the digital classrooms of Coursera, are testament to my unwavering commitment to growth and learning. The Google Data Analyst Certificate has not only honed my skills in SQL, R, and Tableau but also ignited a passion for transforming raw data into compelling stories that drive decision-making. With a knack for outside-the-box thinking and a flair for effective project management, I stand at the crossroads of technology and business, ready to embark on new adventures that challenge the status quo. Whether it's through crafting data-driven solutions or navigating the entrepreneurial journey, my story is one of relentless pursuit of excellence and a passion for making a difference, one data point at a time.
-  </p>
+<span class="tooltip"><h2>Pages</h2><span class="tooltiptext">This section is for the pages that are being design at the moment.</span></span>
 
-  <p>
-    This website serves as a glimpse into my journey and experiences. Feel free to explore and learn more about my projects and interests in the field of technology and data analysis.
-  </p>
+  <div class="pages">
+    
+    <a href="biz.html">Business Tips</a> 
+    |
+    <a href="favfood.html">My Favorite Food</a> 
+  </div>
 
-  <!-- Link to Valencia College -->
-  <p>
-    Check out my college: 
-    <a href="https://valenciacollege.edu" target="_blank" title="Visit Valencia College">Valencia College</a>.
-  </p>
+  <!-- Additional Links Section -->
+  
+  <div class="links-section">
+    <h2>Valencia College</h2> 
+    <a href="https://valenciacollege.edu" target="_blank" title="Visit Valencia College">Valencia College</a> 
+    | 
+    <a href="https://valenciacollege.instructure.com/" target="_blank" title="Visit Canvas">Canvas</a> 
+    | 
+    <a href="https://cas.aws.valenciacollege.edu/cas/login?service=https%3A%2F%2Fatlas-awpd-prd.valenciacollege.edu%2Fc%2Fportal%2Flogin" target="_blank" title="Visit Atlas">Atlas</a>
+  </div>
 
-  <!-- Link to my favorite food -->
-  <p>Check out my favorite food!</p>
-    <a href="favfood.html">My Favorite Food</a>
+  <!-- Video Container -->
+  
+<hr>
+<div class="video-container">
+    <h2>What keeps me at home...</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GBEgoaLZzXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
- <!-- Add a link to your biz.html page here -->
- <p>Learn about creating and registering a business:</p>
- <a href="biz.html">Business Tips</a>
+  <!-- Tooltip Example -->
+  <!--
+  <p>Hover over this <span class="tooltip">text<span class="tooltiptext">Tooltip text</span></span>.</p>  -->
 
   <hr> <!-- Horizontal Rule -->
 
