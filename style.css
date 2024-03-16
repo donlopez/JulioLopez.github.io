@@ -108,5 +108,12 @@ body {
   .screenshot:hover {
     transform: scale(1.1); /* Slightly increase size on hover */
   }
+
+  .screenshot-link {
+    border: none !important; /* Ensures no border around the screenshot link */
+    padding: 0 !important; /* Ensures no padding is added to the screenshot link */
+    background: none !important; /* Ensures no background is added to the screenshot link */
+}
+
   
   
