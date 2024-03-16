@@ -98,10 +98,11 @@ body {
   }
   
   .screenshot {
-    width: 4in; /* Set the width */
-    height: 4in; /* Set the height */
+    width: 3in; /* Set the width */
+    height: 3in; /* Set the height */
     margin: 10px; /* Add some space around the images */
     transition: transform 0.3s ease; /* Smooth transformation upon hovering */
+    border: none !important; /* Ensures no border around the image */
   }
   
   .screenshot:hover {
