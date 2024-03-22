@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Title of the webpage shown in the browser's title/tab bar -->
+    <title>User Input Form:</title>
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- Link to the external CSS file -->
+    <script src="script.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+
+    <!-- Kebab Menu -->
+<div class="kebab-menu">
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu-content" id="menuContent">
+      <a href="index.html">Home</a>
+      <a href="biz.html">Business Tips</a>
+      <a href="favfood.html">My Favorite Food</a>
+      <a href="forms.html">Forms</a>
+      <a href="tables.html">Tables</a>
+      <a href="https://valenciacollege.edu" target="_blank">Valencia College</a>
+      <a href="https://valenciacollege.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://cas.aws.valenciacollege.edu/cas/login?service=https%3A%2F%2Fatlas-awpd-prd.valenciacollege.edu%2Fc%2Fportal%2Flogin" target="_blank">Atlas</a>
+    </div>
+  </div>
+
+<!-- Form tag defines the form. The action attribute specifies where to send form data when submitted. Method "post" hides the data. -->
+<form action="/submit-form" method="post" enctype="multipart/form-data">
+    <!-- Image of the Valencia Logo. Replace 'valencia_logo.png' with the actual path to your image file. -->
+    <div style="display: flex; justify-content: center;">
+        <img src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/logo-vc.png" alt="Valencia Logo" />
+    </div>
+<!-- Heading for the form -->
+<h2>User Input Form:</h2>
+    <!-- Section for first name input -->
+    <p>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+    </p>
+    
+    <!-- Section for last name input -->
+    <p>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+    </p>
+
+    <!-- Radio buttons for gender selection -->
+    <p>Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </p>
+
+    <!-- Checkboxes for selecting favorite colors -->
+    <p style="text-align: left;">Select your favorite colors:
+        <input type="checkbox" id="red" name="color" value="Red">
+        <label for="red">Red</label>
+        <input type="checkbox" id="white" name="color" value="White">
+        <label for="white">White</label>
+        <input type="checkbox" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label>
+    </p>
+
+    <!-- Dropdown list for sports selection -->
+    <p>
+        <label for="sports">Choose a sport:</label>
+        <select id="sports" name="sports">
+            <option value="baseball">Select one</option>
+            <option value="basketball">Basketball</option>
+            <option value="baseball">Baseball</option>
+            <option value="baseball">Boxing</option>
+            <option value="baseball">Cycling</option> 
+            <option value="baseball">Football</option>
+            <option value="baseball">Golf</option>
+            <option value="baseball">Swimming</option>
+            <option value="soccer">Soccer</option>
+            <option value="baseball">Tennis</option>
+            <option value="baseball">Volleyball</option>
+            <!-- More sports options can be added here -->
+        </select>
+    </p>
+
+    <!-- Textarea for writing about global warming -->
+    <p>
+        <label for="global_warming">Write about Global Warming:</label>
+        <br> <!-- Line break -->
+        <textarea id="global_warming" name="global_warming" rows="20" cols="50"></textarea>
+    </p>
+
+    <!-- Password input field -->
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="10" required>
+    </p>
+
+    <!-- File submission input -->
+    <p>
+        <label for="file">Select a file to submit:</label>
+        <input type="file" id="file" name="file">
+    </p>
+
+    <!-- Submission button -->
+    <p style="text-align: center;">
+        <input type="submit" value="Submit">
+    </p>
+</form>
+
+</body>
+</html>

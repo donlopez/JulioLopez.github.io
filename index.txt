@@ -1,3 +1,5 @@
+For the following index.html, create a java script and / or CSS to create a left column similar to the picture attached from my GitHub profile on my index.html. This column will have my profile picture with my contact links and social media links. Also add a kebab menu (three vertical lines) to the top left with my home link, internal link pages, and Valencia college including the canvas and atlas links. Also add a footer with my contact info and social media links. Also add horizontal tabs for internal links between the kebab menu and profile similar to the picture examples:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Website</title>
   <link href="style.css" rel="stylesheet" type="text/css"> <!-- Link to the external CSS file -->
-  <script src="script.js" defer></script> <!-- Link to the external JavaScript file -->
 </head>
 <body>
 
-  <!-- Kebab Menu -->
-  <div class="kebab-menu">
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <div class="menu-content" id="menuContent">
-      <a href="index.html">Home</a> 
-      <a href="biz.html">Business Tips</a>
-      <a href="favfood.html">My Favorite Food</a>
-      <a href="forms.html">Forms</a>
-      <a href="tables.html">Tables</a>
-      <a href="https://valenciacollege.edu" target="_blank">Valencia College</a>
-      <a href="https://valenciacollege.instructure.com/" target="_blank">Canvas</a>
-      <a href="https://cas.aws.valenciacollege.edu/cas/login?service=https%3A%2F%2Fatlas-awpd-prd.valenciacollege.edu%2Fc%2Fportal%2Flogin" target="_blank">Atlas</a>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-
-  <div class="main-content">
-    
   <!-- First and Last Name -->
-  <h1 style="text-align: center;">Julio Lopez</h1>
+  <h1>Julio Lopez</h1>
 
   <!-- Image -->
   <img class="profile-pic" src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/LopezPage.jpeg" alt="Profile Picture">
@@ -61,7 +43,29 @@
 
       With a commitment to continuous learning and a drive for excellence, I am dedicated to staying at the forefront of technological advancements. As I continue to grow and evolve in my journey, I am excited to contribute my skills and expertise to organizations seeking to harness the power of data to achieve their goals.
     </p>
-    <p></p>
+  </div>
+
+  <span class="tooltip"><h2>Pages</h2><span class="tooltiptext">This section has the links for pages that are being designed at the moment.</span></span>
+
+  <div class="pages">
+    <a href="biz.html">Business Tips</a> 
+    |
+    <a href="favfood.html">My Favorite Food</a>
+    |
+    <a href="forms.html">Forms</a>
+    |
+    <a href="tables.html">Tables</a>
+  </div>
+
+  <!-- Additional Links Section -->
+  
+  <div class="links-section">
+    <h2>Valencia College</h2> 
+    <a href="https://valenciacollege.edu" target="_blank" title="Visit Valencia College">Valencia College</a> 
+    | 
+    <a href="https://valenciacollege.instructure.com/" target="_blank" title="Visit Canvas">Canvas</a> 
+    | 
+    <a href="https://cas.aws.valenciacollege.edu/cas/login?service=https%3A%2F%2Fatlas-awpd-prd.valenciacollege.edu%2Fc%2Fportal%2Flogin" target="_blank" title="Visit Atlas">Atlas</a>
   </div>
 
   <!-- Video Container -->
@@ -75,10 +79,7 @@
   <hr> <!-- Horizontal Rule -->
 
   <div class="screenshot-container">
-    <span class="tooltip"><h2>Portfolio</h2><span class="tooltiptext">This section is dedicated to my portfolio that is linked to Github.</span></span>
-    
-    <p></p>
-
+    <h2>Portfolio</h2>
     <a href="https://github.com/donlopez/Homes-rent-vs-buy" target="_blank" class="screenshot-link">
       <img src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/DataAnalysis.png" alt="Screenshot 1" class="screenshot">
     </a>
@@ -92,17 +93,6 @@
     "The only way to do great work is to love what you do."
     <cite>- Steve Jobs</cite>
   </blockquote>
-
-</div>
-
-<footer>
-  <div class="footer-content">
-    <a href="https://www.linkedin.com/in/julio-lopez-380937282/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/donlopez" target="_blank">GitHub</a> |
-    <a href="https://twitter.com/dominicanking83" target="_blank">Twitter</a> |
-    <a href="mailto:julio@codingxpro.com">Email</a>
-  </div>
-</footer>
 
 </body>
 </html>

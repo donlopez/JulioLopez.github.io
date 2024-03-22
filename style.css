@@ -8,7 +8,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/OIG2.jpg");
     background-size: cover;
     background-position: center;
-    text-align: center;
+    text-align: justify;
+    line-height: 1.5;
   }
 
   /* resize profile picture */
@@ -23,18 +24,10 @@ body {
 
   
   h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px; /* Adjust this value to the desired space */
     color: #ffffff; /* color for headings */
     font-family: 'Georgia', serif; /* Classic font for headings */
     margin-bottom: 20px;
-  }
-  
-  p, a, blockquote {
-    color: #ffffff; /* text color */
-    border: 1px solid #555; /* Darker border color */
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backgrounds */
   }
   
   a {
@@ -115,5 +108,184 @@ body {
     background: none !important; /* Ensures no background is added to the screenshot link */
 }
 
-  
-  
+
+
+/*------------------TABLE STYLES------------------*/
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the table on the page with a width */
+table {
+  border-collapse: separate; /* Use separate to enable individual border styling */
+  border-spacing: 10px 10px; /* This adds space between cells */
+  width: 80%;
+  margin: 20px auto;
+  border-top: 8px solid #ddd; /* Light color for top border for 3D effect */
+  border-left: 8px solid #ddd; /* Light color for left border for 3D effect */
+  border-bottom: 8px solid #141414; /* Darker color for bottom border for 3D effect */
+  border-right: 8px solid #141414; /* Darker color for right border for 3D effect */
+  position: relative;
+}
+
+
+/* Style table headers */
+th {
+  background-color: #323232;
+  padding: 15px;
+  border: 2px solid rgb(24, 24, 24);
+  text-align: left;
+}
+
+/* Style table data cells */
+td {
+  background-color: #000000;
+  padding: 15px;
+  border: 2px solid rgb(24, 24, 24);
+  text-align: center;
+}
+
+/* Styling for the first column to align text to the left */
+td:first-child {
+  text-align: left;
+}
+
+
+/* -------------------Kebab Menu Styles-------------------- */
+
+.menu-icon {
+  cursor: pointer;
+  padding: 5px; /* Increased padding for a larger clickable area */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  font-size: 20px; /* Increase the size of the icon */
+  background-color: transparent; /* Make the background transparent */
+  border: 2px solid #2b2a2a; /* Border around the icon */
+  border-radius: 10px; /* Rounded corners for the border */
+}
+
+.menu-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #090d10;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; /* Adjust as necessary */
+  border-right: 1px solid #434343; /* Example border style */
+  border-top-right-radius: 10px; /* Rounded top right corner */
+  border-bottom-right-radius: 10px; /* Rounded bottom right corner */
+  text-align: left; /* Ensures text alignment is to the left */
+}
+
+.menu-content a {
+  padding: 8px 8px 8px 32px; /* Adjust left padding for text alignment */
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-content a:hover {
+  color: #eaeaea;
+  background-color: #575757;
+}
+
+
+/*------------------FORMS STYLES------------------*/
+
+/* Target the form specifically to avoid affecting other elements */
+form {
+  background-color: #333; /* Optional: sets a background color for the form */
+  padding: 20px; /* Adds space inside the form borders */
+  border-radius: 10px; /* Rounds the corners of the form */
+  border: 2px solid #444; /* Sets the border color and thickness */
+  margin-top: 20px; /* Adds space above the form */
+}
+
+/* Adds spacing and visual separation between each form field */
+form p {
+  margin-bottom: 20px; /* Adds space below each paragraph (and thus each form field) */
+  padding: 10px; /* Adds space inside each form field area */
+  background-color: #222; /* Optional: sets a background color for each form field area */
+  border-radius: 5px; /* Rounds the corners of the form field areas */
+}
+
+/* Further style the input, select, and textarea elements to ensure they are visually integrated */
+input, select, textarea {
+  width: calc(100% - 20px); /* Ensures inputs take up the full width of their container, minus padding */
+  margin: 5px 0; /* Adds a little space above and below each form element */
+  padding: 6px; /* Adds space inside each form element */
+  border-radius: 5px; /* Rounds the corners of the input fields */
+  border: 1px solid #555; /* Sets the border color and thickness */
+  background-color: #111; /* Sets a background color for input fields */
+  color: #ddd; /* Sets the text color */
+}
+
+/* Style the submit button to stand out */
+input[type="submit"] {
+  background-color: #057312; /* Sets the background color of the submit button */
+  color: #fff; /* Sets the text color of the submit button */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+  border: none; /* Removes the default border */
+  width: auto; /* Adjusts the width to fit the content */
+}
+
+/* Ensure labels are clearly visible */
+label {
+  display: block; /* Ensures labels are on their own line */
+  margin-bottom: 5px; /* Adds space below each label */
+  color: #ccc; /* Sets the label text color */
+}
+
+/* Target input fields for first name and last name and reduce their width */
+#first_name, #last_name {
+  width: 50%;
+}
+
+select#sports {
+  width: auto;
+}
+
+/* Set specific size for the "Write about Global Warming:" textarea, but allow resizing */
+form textarea#global_warming {
+  width: 400px; /* Width equivalent to cols="50" */
+  height: 400px; /* Height equivalent to rows="20" */
+  resize: both; /* Allows resizing both horizontally and vertically */
+}
+
+/* Adjust password input box to fit 10 characters */
+form input[type="password"] {
+  width: auto; /* Adjust width to fit content */
+}
+
+/* Adjust the file input size to fit its content */
+input[type="file"] {
+  width: auto;
+}
+
+/* Align radio buttons and checkboxes with their labels */
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+  vertical-align: top;
+  margin-left: 4px;
+}
+
+/* Additional style to remove any default browser styles that may cause misalignment */
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin: 0;
+  vertical-align: top;
+  position: relative;
+  top: 25px;
+}
